@@ -1,0 +1,100 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CC	makefile	/^CC=g++$/;"	m
+ELFREAD	elfReader.h	/^namespace ELFREAD$/;"	n
+ELFREAD::Elf32_header	elfReader.h	/^} Elf32_header;$/;"	t	namespace:ELFREAD	typeref:struct:ELFREAD::__anon1
+ELFREAD::ElfReader	elfReader.h	/^class ElfReader$/;"	c	namespace:ELFREAD
+ELFREAD::ElfReader::ElfReader	elfReader.h	/^	ElfReader(const char *filename);$/;"	p	class:ELFREAD::ElfReader	access:public	signature:(const char *filename)
+ELFREAD::ElfReader::elf_header	elfReader.h	/^    Elf32_header	elf_header;$/;"	m	class:ELFREAD::ElfReader	access:private
+ELFREAD::ElfReader::elf_section	elfReader.h	/^	Elf32_Shdr 		*elf_section;$/;"	m	class:ELFREAD::ElfReader	access:private
+ELFREAD::ElfReader::fd	elfReader.h	/^    int fd;     \/\/打开文件描述符$/;"	m	class:ELFREAD::ElfReader	access:private
+ELFREAD::ElfReader::filesize	elfReader.h	/^    unsigned int filesize;$/;"	m	class:ELFREAD::ElfReader	access:private
+ELFREAD::ElfReader::getFileSize	elfReader.h	/^	unsigned int  getFileSize() const;$/;"	p	class:ELFREAD::ElfReader	access:public	signature:() const
+ELFREAD::ElfReader::getHeader	elfReader.h	/^    Elf32_Ehdr& getHeader() const;$/;"	p	class:ELFREAD::ElfReader	access:public	signature:() const
+ELFREAD::ElfReader::pos	elfReader.h	/^    unsigned int pos; \/\/文件当前读过的字节数$/;"	m	class:ELFREAD::ElfReader	access:private
+ELFREAD::ElfReader::printElfDumpProgram	elfReader_Dump.cpp	/^void ELFREAD::ElfReader::printElfDumpProgram()$/;"	f	class:ELFREAD::ElfReader	signature:()
+ELFREAD::ElfReader::printElfHeader	elfReader.h	/^    void printElfHeader() const;$/;"	p	class:ELFREAD::ElfReader	access:public	signature:() const
+ELFREAD::ElfReader::printElfSection	elfReader.h	/^	void printElfSection();$/;"	p	class:ELFREAD::ElfReader	access:public	signature:()
+ELFREAD::ElfReader::printElfSymbol	elfReader.h	/^	void printElfSymbol();$/;"	p	class:ELFREAD::ElfReader	access:public	signature:()
+ELFREAD::ElfReader::readFile	elfReader.h	/^    bool readFile(const char *filename);$/;"	p	class:ELFREAD::ElfReader	access:public	signature:(const char *filename)
+ELFREAD::ElfReader::start	elfReader.h	/^    char *start;$/;"	m	class:ELFREAD::ElfReader	access:private
+ELFREAD::ElfReader::~ElfReader	elfReader.h	/^    ~ElfReader();$/;"	p	class:ELFREAD::ElfReader	access:public	signature:()
+ELFREAD::__anon1::e_ehsize	elfReader.h	/^    Elf32_Half      e_ehsize;   \/\/elf文件头的大小$/;"	m	struct:ELFREAD::__anon1	access:public
+ELFREAD::__anon1::e_entry	elfReader.h	/^    Elf32_Addr      e_entry;    \/\/入口地址$/;"	m	struct:ELFREAD::__anon1	access:public
+ELFREAD::__anon1::e_flags	elfReader.h	/^    Elf32_Word      e_flags;$/;"	m	struct:ELFREAD::__anon1	access:public
+ELFREAD::__anon1::e_ident	elfReader.h	/^    unsigned char   e_ident[EI_NIDENT];$/;"	m	struct:ELFREAD::__anon1	access:public
+ELFREAD::__anon1::e_machine	elfReader.h	/^    Elf32_Half      e_machine;  \/\/机器相关$/;"	m	struct:ELFREAD::__anon1	access:public
+ELFREAD::__anon1::e_phentsize	elfReader.h	/^    Elf32_Half      e_phentsize;$/;"	m	struct:ELFREAD::__anon1	access:public
+ELFREAD::__anon1::e_phnum	elfReader.h	/^    Elf32_Half      e_phnum;$/;"	m	struct:ELFREAD::__anon1	access:public
+ELFREAD::__anon1::e_phoff	elfReader.h	/^    Elf32_Off       e_phoff;    \/\/程序头偏移地址$/;"	m	struct:ELFREAD::__anon1	access:public
+ELFREAD::__anon1::e_shentsize	elfReader.h	/^    Elf32_Half      e_shentsize; \/\/段表描述符的大小，一般为sizeof(Elf32_Shdr)$/;"	m	struct:ELFREAD::__anon1	access:public
+ELFREAD::__anon1::e_shnum	elfReader.h	/^    Elf32_Half      e_shnum;    \/\/段表描述符数量$/;"	m	struct:ELFREAD::__anon1	access:public
+ELFREAD::__anon1::e_shoff	elfReader.h	/^    Elf32_Off       e_shoff;    \/\/段表在文件中的偏移地址$/;"	m	struct:ELFREAD::__anon1	access:public
+ELFREAD::__anon1::e_shstrndx	elfReader.h	/^    Elf32_Half      e_shstrndx; \/\/段表字符串表在段表中的下标$/;"	m	struct:ELFREAD::__anon1	access:public
+ELFREAD::__anon1::e_type	elfReader.h	/^    Elf32_Half      e_type;     \/\/elf文件类型 1 可重定位；2 可执行； 3 共享目标文件$/;"	m	struct:ELFREAD::__anon1	access:public
+ELFREAD::__anon1::e_version	elfReader.h	/^    Elf32_Word      e_version;  \/\/版本信息，一般为1$/;"	m	struct:ELFREAD::__anon1	access:public
+ELF_LENHT	elfReader.h	60;"	d
+Elf32_header	elfReader.h	/^} Elf32_header;$/;"	t	namespace:ELFREAD	typeref:struct:ELFREAD::__anon1
+ElfReader	elfReader.cpp	/^ElfReader::ElfReader(const char *filename)$/;"	f	class:ElfReader	signature:(const char *filename)
+ElfReader	elfReader.h	/^	ElfReader(const char *filename);$/;"	p	class:ELFREAD::ElfReader	access:public	signature:(const char *filename)
+ElfReader	elfReader.h	/^class ElfReader$/;"	c	namespace:ELFREAD
+ElfReader::ElfReader	elfReader.cpp	/^ElfReader::ElfReader(const char *filename)$/;"	f	class:ElfReader	signature:(const char *filename)
+ElfReader::getFileSize	elfReader.cpp	/^unsigned int ElfReader::getFileSize() const$/;"	f	class:ElfReader	signature:() const
+ElfReader::printElfHeader	elfReader_header.cpp	/^void ElfReader::printElfHeader() const$/;"	f	class:ElfReader	signature:() const
+ElfReader::printElfRelSym	elfReader_Dump.cpp	/^void ElfReader::printElfRelSym()$/;"	f	class:ElfReader	signature:()
+ElfReader::printElfRelSym	elfReader_RelSym.cpp	/^void ElfReader::printElfRelSym()$/;"	f	class:ElfReader	signature:()
+ElfReader::printElfSection	elfReader_Section.cpp	/^void ElfReader::printElfSection()$/;"	f	class:ElfReader	signature:()
+ElfReader::printElfSymbol	elfReader_Symbol.cpp	/^void ElfReader::printElfSymbol()$/;"	f	class:ElfReader	signature:()
+ElfReader::readFile	elfReader.cpp	/^bool ElfReader::readFile(const char *filename)$/;"	f	class:ElfReader	signature:(const char *filename)
+ElfReader::~ElfReader	elfReader.cpp	/^ElfReader::~ElfReader()$/;"	f	class:ElfReader	signature:()
+Flags	makefile	/^Flags= -Wall$/;"	m
+Lib_INC	share/Lib.h	20;"	d
+Section_Lenth	elfReader.h	61;"	d
+__ELFREADER_H_	elfReader.h	10;"	d
+e_ehsize	elfReader.h	/^    Elf32_Half      e_ehsize;   \/\/elf文件头的大小$/;"	m	struct:ELFREAD::__anon1	access:public
+e_entry	elfReader.h	/^    Elf32_Addr      e_entry;    \/\/入口地址$/;"	m	struct:ELFREAD::__anon1	access:public
+e_flags	elfReader.h	/^    Elf32_Word      e_flags;$/;"	m	struct:ELFREAD::__anon1	access:public
+e_ident	elfReader.h	/^    unsigned char   e_ident[EI_NIDENT];$/;"	m	struct:ELFREAD::__anon1	access:public
+e_machine	elfReader.h	/^    Elf32_Half      e_machine;  \/\/机器相关$/;"	m	struct:ELFREAD::__anon1	access:public
+e_phentsize	elfReader.h	/^    Elf32_Half      e_phentsize;$/;"	m	struct:ELFREAD::__anon1	access:public
+e_phnum	elfReader.h	/^    Elf32_Half      e_phnum;$/;"	m	struct:ELFREAD::__anon1	access:public
+e_phoff	elfReader.h	/^    Elf32_Off       e_phoff;    \/\/程序头偏移地址$/;"	m	struct:ELFREAD::__anon1	access:public
+e_shentsize	elfReader.h	/^    Elf32_Half      e_shentsize; \/\/段表描述符的大小，一般为sizeof(Elf32_Shdr)$/;"	m	struct:ELFREAD::__anon1	access:public
+e_shnum	elfReader.h	/^    Elf32_Half      e_shnum;    \/\/段表描述符数量$/;"	m	struct:ELFREAD::__anon1	access:public
+e_shoff	elfReader.h	/^    Elf32_Off       e_shoff;    \/\/段表在文件中的偏移地址$/;"	m	struct:ELFREAD::__anon1	access:public
+e_shstrndx	elfReader.h	/^    Elf32_Half      e_shstrndx; \/\/段表字符串表在段表中的下标$/;"	m	struct:ELFREAD::__anon1	access:public
+e_type	elfReader.h	/^    Elf32_Half      e_type;     \/\/elf文件类型 1 可重定位；2 可执行； 3 共享目标文件$/;"	m	struct:ELFREAD::__anon1	access:public
+e_version	elfReader.h	/^    Elf32_Word      e_version;  \/\/版本信息，一般为1$/;"	m	struct:ELFREAD::__anon1	access:public
+elf_header	elfReader.h	/^    Elf32_header	elf_header;$/;"	m	class:ELFREAD::ElfReader	access:private
+elf_section	elfReader.h	/^	Elf32_Shdr 		*elf_section;$/;"	m	class:ELFREAD::ElfReader	access:private
+fd	elfReader.h	/^    int fd;     \/\/打开文件描述符$/;"	m	class:ELFREAD::ElfReader	access:private
+filesize	elfReader.h	/^    unsigned int filesize;$/;"	m	class:ELFREAD::ElfReader	access:private
+foobar	share/Lib.c	/^void foobar(int i)$/;"	f	signature:(int i)
+foobar	share/Lib.h	/^void foobar(int i);$/;"	p	signature:(int i)
+getFileSize	elfReader.cpp	/^unsigned int ElfReader::getFileSize() const$/;"	f	class:ElfReader	signature:() const
+getFileSize	elfReader.h	/^	unsigned int  getFileSize() const;$/;"	p	class:ELFREAD::ElfReader	access:public	signature:() const
+getHeader	elfReader.h	/^    Elf32_Ehdr& getHeader() const;$/;"	p	class:ELFREAD::ElfReader	access:public	signature:() const
+get_data	elfReader.h	32;"	d
+main	share/dll.c	/^int main(int agrc, char *argv[])$/;"	f	signature:(int agrc, char *argv[])
+main	share/program1.c	/^int main()$/;"	f
+main	share/program2.c	/^int main()$/;"	f
+offsetof	elfReader.h	30;"	d
+pos	elfReader.h	/^    unsigned int pos; \/\/文件当前读过的字节数$/;"	m	class:ELFREAD::ElfReader	access:private
+printElfDumpProgram	elfReader_Dump.cpp	/^void ELFREAD::ElfReader::printElfDumpProgram()$/;"	f	class:ELFREAD::ElfReader	signature:()
+printElfHeader	elfReader.h	/^    void printElfHeader() const;$/;"	p	class:ELFREAD::ElfReader	access:public	signature:() const
+printElfHeader	elfReader_header.cpp	/^void ElfReader::printElfHeader() const$/;"	f	class:ElfReader	signature:() const
+printElfRelSym	elfReader_Dump.cpp	/^void ElfReader::printElfRelSym()$/;"	f	class:ElfReader	signature:()
+printElfRelSym	elfReader_RelSym.cpp	/^void ElfReader::printElfRelSym()$/;"	f	class:ElfReader	signature:()
+printElfSection	elfReader.h	/^	void printElfSection();$/;"	p	class:ELFREAD::ElfReader	access:public	signature:()
+printElfSection	elfReader_Section.cpp	/^void ElfReader::printElfSection()$/;"	f	class:ElfReader	signature:()
+printElfSymbol	elfReader.h	/^	void printElfSymbol();$/;"	p	class:ELFREAD::ElfReader	access:public	signature:()
+printElfSymbol	elfReader_Symbol.cpp	/^void ElfReader::printElfSymbol()$/;"	f	class:ElfReader	signature:()
+readFile	elfReader.cpp	/^bool ElfReader::readFile(const char *filename)$/;"	f	class:ElfReader	signature:(const char *filename)
+readFile	elfReader.h	/^    bool readFile(const char *filename);$/;"	p	class:ELFREAD::ElfReader	access:public	signature:(const char *filename)
+start	elfReader.h	/^    char *start;$/;"	m	class:ELFREAD::ElfReader	access:private
+~ElfReader	elfReader.cpp	/^ElfReader::~ElfReader()$/;"	f	class:ElfReader	signature:()
+~ElfReader	elfReader.h	/^    ~ElfReader();$/;"	p	class:ELFREAD::ElfReader	access:public	signature:()
